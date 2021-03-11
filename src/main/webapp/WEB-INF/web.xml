@@ -3,4 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <!--add code about new servlet-->
+    <servlet>
+        <servlet-name>yaling</servlet-name> <!--give any name -->
+        <servlet-class>com.WuYaling.week2.homework.HelloWorldServlet</servlet-class> <!--package + name of servlet class-->
+    </servlet>
+<servlet-mapping>
+    <servlet-name>yaling</servlet-name>
+    <url-pattern>/hello</url-pattern> <!--url must start with /-->
+</servlet-mapping>
+    <!--x=5 , a=x so we can see a=5 -->
 </web-app>
